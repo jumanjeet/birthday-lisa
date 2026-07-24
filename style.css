@@ -1,0 +1,557 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+body{
+
+    background:linear-gradient(135deg,#ff4d88,#ff99cc,#ffd6e8);
+    color:white;
+    text-align:center;
+    overflow-x:hidden;
+
+}
+
+
+
+/* Hero Section */
+
+.hero{
+
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+
+}
+
+
+.hero h1{
+
+    font-size:50px;
+    text-shadow:0 0 20px gold;
+    animation:glow 2s infinite alternate;
+
+}
+
+
+.hero h2{
+
+    font-size:35px;
+    margin:20px;
+
+}
+
+
+
+.photo{
+
+    width:260px;
+    height:260px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid white;
+    box-shadow:0 0 30px gold;
+}
+
+
+
+.hero p{
+
+    margin:25px;
+    font-size:22px;
+    line-height:1.7;
+
+}
+
+
+
+button{
+
+    padding:15px 35px;
+    border:none;
+    border-radius:50px;
+    background:gold;
+    color:#222;
+    font-size:20px;
+    cursor:pointer;
+
+}
+
+
+button:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+
+/* Love Letter */
+
+
+.love,
+.gift,
+.count{
+
+
+    min-height:60vh;
+    padding:50px 20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+
+
+
+.love h2,
+.gift h2,
+.count h2{
+
+    font-size:40px;
+    text-shadow:0 0 20px gold;
+
+}
+
+
+
+.love p{
+
+    margin-top:30px;
+    max-width:700px;
+    background:rgba(255,255,255,0.2);
+    padding:35px;
+    border-radius:25px;
+    font-size:22px;
+    line-height:1.8;
+    backdrop-filter:blur(10px);
+
+}
+
+
+
+/* Gift */
+
+#giftBox{
+
+    font-size:120px;
+    cursor:pointer;
+    animation:bounce 2s infinite;
+
+}
+
+
+
+@keyframes bounce{
+
+    50%{
+
+        transform:translateY(-25px);
+
+    }
+
+}
+
+
+
+/* Countdown */
+
+#timer{
+
+    font-size:55px;
+    color:gold;
+    margin-top:30px;
+    text-shadow:0 0 20px white;
+
+}
+
+
+
+
+/* Glow Animation */
+
+@keyframes glow{
+
+    from{
+
+        text-shadow:0 0 10px gold;
+
+    }
+
+
+    to{
+
+        text-shadow:0 0 40px white;
+
+    }
+
+}
+
+
+
+/* Hearts */
+
+.hearts{
+
+    position:fixed;
+    top:10px;
+    width:100%;
+    font-size:30px;
+    animation:move 5s infinite;
+
+}
+
+
+@keyframes move{
+
+    from{
+
+        transform:translateY(-20px);
+
+    }
+
+
+    to{
+
+        transform:translateY(100vh);
+
+    }
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+.hero h1{
+
+    font-size:35px;
+
+}
+
+
+.photo{
+
+    width:180px;
+    height:180px;
+
+}
+
+
+}/* Gallery Section ❤️ */
+
+.gallery{
+
+    min-height:60vh;
+    padding:50px 20px;
+    text-align:center;
+
+}
+
+
+.gallery h2{
+
+    font-size:40px;
+    margin-bottom:40px;
+    text-shadow:0 0 20px gold;
+
+}
+
+
+
+.photos{
+
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+
+}
+
+
+
+.photos img{
+
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:25px;
+    border:5px solid white;
+    box-shadow:0 0 30px gold;
+    transition:0.5s;
+
+}
+
+
+
+.photos img:hover{
+
+    transform:scale(1.1) rotate(3deg);
+
+}/* Password Screen Luxury Design 🔐❤️ */
+
+#lockScreen{
+
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+
+    background:linear-gradient(
+        135deg,
+        #ff4d88,
+        #8e44ad
+    );
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    z-index:9999;
+
+    text-align:center;
+
+}
+
+
+#lockScreen h1{
+
+    font-size:45px;
+    color:white;
+    text-shadow:0 0 20px gold;
+
+}
+
+
+#lockScreen p{
+
+    font-size:22px;
+    margin:20px;
+
+}
+
+
+#passwordInput{
+
+    width:300px;
+    padding:15px;
+
+    border:none;
+    border-radius:30px;
+
+    text-align:center;
+
+    font-size:18px;
+
+    outline:none;
+
+}
+
+
+#lockScreen button{
+
+    margin-top:25px;
+
+}
+
+
+#error{
+
+    color:#fff;
+
+}/* Animated Love Letter ❤️ */
+
+#loveText{
+
+    background:rgba(255,255,255,0.2);
+    padding:40px;
+    border-radius:30px;
+
+    max-width:750px;
+
+    font-size:23px;
+    line-height:1.8;
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:0 0 35px gold;
+
+    animation:letterGlow 3s infinite alternate;
+
+}
+
+
+@keyframes letterGlow{
+
+from{
+
+    box-shadow:0 0 15px gold;
+
+}
+
+
+to{
+
+    box-shadow:0 0 45px white;
+
+}
+
+}
+
+
+
+/* Falling Roses 🌹 */
+
+.rose{
+
+    position:fixed;
+
+    top:-50px;
+
+    font-size:35px;
+
+    animation:roseFall linear infinite;
+
+    z-index:999;
+
+}
+
+
+
+@keyframes roseFall{
+
+
+from{
+
+    transform:translateY(-50px)
+    rotate(0deg);
+
+}
+
+
+to{
+
+    transform:translateY(110vh)
+    rotate(360deg);
+
+}
+
+
+}/* Final Birthday Screen 🎂❤️ */
+
+.final{
+
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    padding:40px 20px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #ff4d88,
+        #8e44ad,
+        #ff99cc
+    );
+
+    text-align:center;
+
+}
+
+
+.final h1{
+
+    font-size:60px;
+
+    color:white;
+
+    text-shadow:
+    0 0 15px gold,
+    0 0 30px white;
+
+    animation:finalGlow 2s infinite alternate;
+
+}
+
+
+
+.final p{
+
+    margin-top:40px;
+
+    max-width:750px;
+
+    font-size:26px;
+
+    line-height:1.8;
+
+    background:rgba(255,255,255,0.15);
+
+    padding:40px;
+
+    border-radius:30px;
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+
+
+@keyframes finalGlow{
+
+
+from{
+
+    transform:scale(1);
+
+}
+
+
+to{
+
+    transform:scale(1.05);
+
+}
+
+
+}
+
+
+
+/* Mobile Final Screen */
+
+@media(max-width:600px){
+
+
+.final h1{
+
+    font-size:38px;
+
+}
+
+
+.final p{
+
+    font-size:20px;
+
+}
+
+
+}
